@@ -1,4 +1,4 @@
-## Flask API for Jalpc & personal usage
+## Z-Tool backend
 
 * Time
 * Page view count for <http://www.jack003.com>
@@ -6,7 +6,6 @@
 * Request/IP infomation
 * Domain Name Information
 * DNS Record
-
 
 ### Usage (ubuntu 14.04)
 
