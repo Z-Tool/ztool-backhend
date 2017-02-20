@@ -15,7 +15,7 @@ from ..decorators import jsonp
 
 
 @api_1_0.route('/', methods=['GET'])
-def api_list():
+def index():
     with open('app/api_1_0/APIList.json') as f:
         data = f.read()
     return jsonify(data=json.loads(data), status='success')
