@@ -1,5 +1,0 @@
-/*
-jquery.js
-jquery.vegas.js
-bootstrap.js
-*/

@@ -1,9 +1,10 @@
 from flask import g, jsonify, request
 from flask_httpauth import HTTPBasicAuth
-from ..models import User, AnonymousUser
+
+from app.constant import login_required_list
 from . import api_1_0
 from .errors import unauthorized
-from .constant import login_required_list
+from ..models import User, AnonymousUser
 
 auth = HTTPBasicAuth()
 

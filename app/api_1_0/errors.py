@@ -6,15 +6,11 @@ from . import api_1_0
 
 
 def bad_request(message):
-    response = jsonify({'error': 'bad request', 'message': message})
-    response.status_code = 400
-    return response
+    return jsonify({'error': 'bad request', 'message': message}), 400
 
 
 def unauthorized(message):
-    response = jsonify({'error': 'unauthorized', 'message': message})
-    response.status_code = 401
-    return response
+    return jsonify({'error': 'unauthorized', 'message': message}), 401
 
 
 @api_1_0.errorhandler(ValidationError)

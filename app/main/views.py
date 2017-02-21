@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import render_template
+from flask import jsonify
 
 from . import main
 
 
 @main.route('/', methods=['GET'])
 def hello_world():
-    return render_template('index.html')
+    return jsonify(status='success', message='welcome to jack003!')
